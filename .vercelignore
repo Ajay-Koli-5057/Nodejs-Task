@@ -1,0 +1,4 @@
+/_sapper_
+/cypress
+!node_modules
+/node_modules/*

@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "name": "vercel",
-  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-  "routes": [
+  "builds": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "src": "index.js",
+      "use": "@vercel/node"
     }
-  ]
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ],
+  "env": {
+    "PORT": "4000"
+  }
 }
